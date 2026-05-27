@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="calc-title">Calculator</h1><br>
+    <!--Calculator box-->
+    <div id="calc-box">
+        <!--Result Box-->
+        <div id="result-box">
+            <input type="text" id="result-text" readonly>
+        </div>
+        <!--Buttons-->
+        <div id="buttons">
+            <button class="but2 btn-wide" onclick="clearDisplay()">AC</button>
+            <button class="but2" onclick="deleteLast()">x</button>
+            <button class="but2" onclick="input('/')">/</button>
+
+            <button class="but" onclick="input('7')">7</button>
+            <button class="but" onclick="input('8')">8</button>
+            <button class="but" onclick="input('9')">9</button>
+            <button class="but2" onclick="input('*')">*</button>
+
+            <button class="but" onclick="input('4')">4</button>
+            <button class="but" onclick="input('5')">5</button>
+            <button class="but" onclick="input('6')">6</button>
+            <button class="but2" onclick="input('-')">-</button>
+
+            <button class="but" onclick="input('1')">1</button>
+            <button class="but" onclick="input('2')">2</button>
+            <button class="but" onclick="input('3')">3</button>
+            <button class="but2" onclick="input('+')">+</button>
+
+            <button class="but btn-wide" onclick="input('0')">0</button>
+            <button class="but2" onclick="input('.')">.</button>
+            <button class="but2" onclick="calculate()">=</button>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
